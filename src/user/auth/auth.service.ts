@@ -71,8 +71,8 @@ export class AuthService {
   private generateJWT(name: string, id: number) {
     return jwt.sign(
       {
-        id,
         name,
+        id,
       },
       process.env.JSON_TOKEN_KEY,
       {
